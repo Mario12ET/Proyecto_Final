@@ -6,6 +6,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
 
 public class Soy_Lider extends JFrame {
 
@@ -35,8 +36,12 @@ public class Soy_Lider extends JFrame {
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("HOLA MUNDO");
+		lblNewLabel.setBounds(121, 27, 170, 168);
+		contentPane.add(lblNewLabel);
 	}
 
 }
